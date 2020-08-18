@@ -20,12 +20,6 @@
 /* Sockets buffers length */
 #define LEN 4096
 
-
-/* Server address */
-#define SERVER_ADDR "127.0.0.1"
-
-
-
 /*
  * Main execution of the client program of our simple protocol
  */
@@ -62,7 +56,7 @@ main(int argc, char *argv[]) {
     /* Defines the connection properties */
     server.sin_family = AF_INET;
     server.sin_port = htons(PORT);
-    server.sin_addr.s_addr = inet_addr(SERVER_ADDR);
+    server.sin_addr.s_addr = htonl(INADDR_ANY);
     memset(server.sin_zero, 0x0, 8);
 
 
