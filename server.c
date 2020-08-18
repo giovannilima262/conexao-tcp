@@ -48,6 +48,7 @@ main(void) {
     /* Defines the server socket properties */
     server.sin_family = AF_INET;
     server.sin_port = htons(PORT);
+    server.sin_addr.s_addr = htonl(INADDR_ANY);
     memset(server.sin_zero, 0x0, 8);
 
 
