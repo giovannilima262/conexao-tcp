@@ -16,6 +16,7 @@
 /* https://blog.pantuza.com/artigos/programando-um-protocolo-utilizando-sockets  Defines the server port */
 #define PORT 4242
 
+#define SERVER_ADDR "127.0.0.1"
 
 /* Sockets buffers length */
 #define LEN 4096
@@ -56,7 +57,7 @@ main(int argc, char *argv[]) {
     /* Defines the connection properties */
     server.sin_family = AF_INET;
     server.sin_port = htons(PORT);
-    server.sin_addr.s_addr = htonl(INADDR_ANY);
+    server.sin_addr.s_addr = inet_addr(SERVER_ADDR);
     memset(server.sin_zero, 0x0, 8);
 
 
