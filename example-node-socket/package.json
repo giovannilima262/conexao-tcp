@@ -1,0 +1,13 @@
+{
+  "name": "conexao-tcp-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server-web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server-web.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
