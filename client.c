@@ -14,9 +14,9 @@
 
 
 /* https://blog.pantuza.com/artigos/programando-um-protocolo-utilizando-sockets  Defines the server port */
-#define PORT 4242
+#define PORT 80
 
-#define SERVER_ADDR "127.0.0.1"
+#define SERVER_ADDR "http://guarded-shelf-44773.herokuapp.com"
 
 /* Sockets buffers length */
 #define LEN 4096

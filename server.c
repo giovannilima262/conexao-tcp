@@ -12,7 +12,7 @@
 
 
 /* Server port  */
-#define PORT 4242
+#define PORT 80
 
 
 /* Buffer length */
